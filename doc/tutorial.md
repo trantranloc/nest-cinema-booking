@@ -6,6 +6,9 @@
 ```sh
 npm i -g @nestjs/cli
 nest new movie-booking
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
 ```
 📌 **Cấu trúc ban đầu của dự án:**  
 ```
@@ -69,6 +72,10 @@ nest new movie-booking
 - `app.service.ts` → Logic nghiệp vụ.  
 
 ---
+  // Cấu hình thư mục chứa file EJS
+  ```sh
+  app.setBaseViewsDir(join(__dirname, '..', 'views'));
+  app.setViewEngine('ejs');
 
 ## **2️⃣ Cấu hình database (PostgreSQL + TypeORM)**  
 📌 **Cài đặt thư viện kết nối Database:**  
